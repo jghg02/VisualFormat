@@ -47,12 +47,15 @@ class ViewController: UIViewController {
         self.contentView.addConstraints(horizontalConstraints)
         
         //Vertical constraints
-        let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[my_view]|", options: [], metrics: nil, views: viewsDict)
+        // V:|[my_view]-0-[green_view]| la separacion entre my_view y green_view es de 0
+        // V:|[my_view]| solo el constraint aplica a my_view y la nueva view (green_view) se coloca por encima
+        // y con los constraints que se le creen. 
+        let verticalConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[my_view]-0-[green_view]|", options: [], metrics: nil, views: viewsDict)
         self.contentView.addConstraints(verticalConstraints)
         
         //Constraint Vrtical to the green_view
-        let verticalConstraintsOrange = NSLayoutConstraint.constraints(withVisualFormat: "V:|[my_view]-10-[green_view(40)]|", options: [], metrics: nil, views: viewsDict);
-        self.contentView.addConstraints(verticalConstraintsOrange);
+        let verticalConstraintsGreen = NSLayoutConstraint.constraints(withVisualFormat: "V:|[my_view]-10-[green_view(100)]|", options: [], metrics: nil, views: viewsDict);
+        self.contentView.addConstraints(verticalConstraintsGreen);
         
         // Contraint Horizontal to the green_view
         let horizontalConstraintsGreen = NSLayoutConstraint.constraints(withVisualFormat: "H:|[green_view]|", options: [], metrics: nil, views: viewsDict)
