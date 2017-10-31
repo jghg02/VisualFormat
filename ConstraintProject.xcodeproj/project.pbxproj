@@ -47,6 +47,7 @@
 		6BC65C151FA82026008AC348 /* ConstraintProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstraintProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BC65C191FA82026008AC348 /* ConstraintProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintProjectUITests.swift; sourceTree = "<group>"; };
 		6BC65C1B1FA82026008AC348 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BC65C271FA8C662008AC348 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +78,7 @@
 		6BC65BED1FA82026008AC348 = {
 			isa = PBXGroup;
 			children = (
+				6BC65C271FA8C662008AC348 /* README.md */,
 				6BC65BF81FA82026008AC348 /* ConstraintProject */,
 				6BC65C0D1FA82026008AC348 /* ConstraintProjectTests */,
 				6BC65C181FA82026008AC348 /* ConstraintProjectUITests */,
